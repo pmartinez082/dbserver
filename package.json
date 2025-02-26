@@ -6,12 +6,12 @@
   "main": "index.js",
   "bin": "index.js",
   
-    "scripts": {
-      "setup": "npm install && concurrently \"npm start\" \"npm run start:ngrok\"",
-      "start": "node index.js",
-      "start:ngrok": "node ngrok-config.js"
-    }
-  ,
+  "scripts": {
+    "setup": "npm install && concurrently \"npm start\" \"npm run start:ngrok\"",
+    "start": "node index.js",
+    "start:ngrok": "node ngrok-config.js"
+    
+  },
   
   "dependencies": {
     "cors": "^2.8.5",
@@ -35,4 +35,5 @@
   "devDependencies": {
     "concurrently": "^9.1.2"
   }
+  
 }

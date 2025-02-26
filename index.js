@@ -23,7 +23,6 @@ app.use(cors({
 
 //* Custom Middleware para agregar los encabezados de red privada en todas las respuestas
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Private-Network', 'true');
     if (req.method === 'OPTIONS') {
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
         return res.sendStatus(204);
